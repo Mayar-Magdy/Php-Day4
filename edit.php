@@ -58,10 +58,21 @@ header("Location: view.php");
 <head>
   <link rel="stylesheet" href="edit_page_style.css">
 </head>
-<body>
-          <h1  >Thanks</h1>
+<body> 
+    <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="not_found.html">Products</a></li>
+            <li><a href="view.php">Users</a></li>
+        </ul>
+        <div class="admin">
+             <a href="index.php"> <img src="admin.jpg" alt="Admin"></a>
+            <a href="index.php">Admin</a>
+        </div>
+    </nav>
+          <!-- <h1 >Thanks</h1> -->
 
-<img src='https://cdn.dribbble.com/userupload/12637295/file/original-098b48a3e823230c188254fb0132fbc4.gif?resize=1024x1024&vertical=center' alt="GIF">
+<img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExejQ4OHZjYzg5OWtneHJnNnR6bjhqZTBiNGIxZzAxYjQzanI4YXZwayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LHZyixOnHwDDy/giphy.gif' alt="GIF">
     <form method="post" enctype="multipart/form-data">
         <table>
             <tr> <td class="def"><h4><?php echo " Edit  ". $user_info["name"] ;?></h4>  </td>

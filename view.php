@@ -7,6 +7,46 @@
 <html >
 <head>
     <style>
+        nav {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+nav a {
+    text-decoration: underline;
+    color: black;
+}
+
+nav a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+nav .admin {
+    display: flex;
+    align-items: center;
+}
+
+nav .admin img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
    a {
     text-decoration: none;
 }
@@ -27,6 +67,17 @@ button {
 </style>
 </head>
 <body>
+     <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="not_found.html">Products</a></li>
+            <li><a href="view.php">Users</a></li>
+        </ul>
+        <div class="admin">
+             <a href="index.php"> <img src="admin.jpg" alt="Admin"></a>
+            <a href="index.php">Admin</a>
+        </div>
+    </nav>
     <h1>Users List</h1>
     <center> 
         <table border="1" >
